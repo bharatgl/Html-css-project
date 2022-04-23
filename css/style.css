@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0px 5rem;
+  align-items: center;
+}
+.nav-container {
+  height: 10%;
+  padding: 5px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 788) 0px 10px 10px -8px;
+}
+
+.nav-left {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  position: absolute;
+  left: 8%;
+}
+
+.nav-links {
+  width: 23rem;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10rem;
+}
