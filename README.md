@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop view : ![](.images\Screenshot 2022-04-25 180511.png)
+Desktop view : \.images\Screenshot 2022-04-25 180511.png
 
-Mobile view :![](images\Screenshot 2022-04-25 180709.png)
+Mobile view : \images\Screenshot 2022-04-25 180709.png
 
 
 
