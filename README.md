@@ -57,7 +57,12 @@ Mobile view :
 ![Screenshot 2022-04-25 180709](https://user-images.githubusercontent.com/56772219/165090890-b476874c-2592-48a5-9aa2-1582650c3c61.png)
 
 
+## Author
+
+ [Bharat Goyal]
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/bharatgl/Html-css-project)
 - Live Site URL: [Add live site URL here](https://shoebox-ns.netlify.app/)
+
