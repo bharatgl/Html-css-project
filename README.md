@@ -1,7 +1,7 @@
 
-# Newton School Assignment HTML/CSS - E-commerce product page solution
+# Newton School Assignment HTML/CSS - E-commerce product(shoes) landing page.
 
-This is a solution to the [E-commerce product page].
+This is the landing page for E-commerce website(shoes) 
 ## Table of contents
 
 - [Overview](#overview)
