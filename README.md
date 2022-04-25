@@ -31,10 +31,11 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop view : \.images\Screenshot 2022-04-25 180511.png
+Desktop view : ![Screenshot 2022-04-25 180511](https://user-images.githubusercontent.com/56772219/165090841-1b9650f5-ca52-4391-867a-b0cbc2fae3a4.png)
 
-Mobile view : \images\Screenshot 2022-04-25 180709.png
 
+Mobile view :
+![Screenshot 2022-04-25 180709](https://user-images.githubusercontent.com/56772219/165090890-b476874c-2592-48a5-9aa2-1582650c3c61.png)
 
 
 ### Links
