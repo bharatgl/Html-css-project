@@ -25,6 +25,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Open+Sans:ital@1&display=swap"
       rel="stylesheet"
     />
+
+    <title>Document</title>
   </head>
   <body>
     <nav class="nav-container">
@@ -35,18 +37,18 @@
       </div>
       <div class="nav-left">
         <div class="nav-logo">
-          <img src="/images/logo.svg" alt="logo" />
+          <img src="/images/logo.svg" alt="Logo" srcset="" />
         </div>
         <ul class="nav-links">
           <li id="links">Collections</li>
           <li id="links">About</li>
           <li id="links">Product</li>
-          <li id="links">Contact us</li>
+          <li id="links">Contact</li>
         </ul>
       </div>
       <div class="nav-right">
         <img src="/images/icon-cart.svg" alt="" />
-        <img src="/images/image-avatar.png" alt="" class="profile" />
+        <img class="profile" src="/images/image-avatar.png" alt="" />
       </div>
     </nav>
     <div class="main-container">
@@ -73,75 +75,87 @@
             </div>
           </div>
         </div>
-        <div class="main-right-part">
-          <h5>SNEAKER COMPANY</h5>
-          <h2>Fall Limited Edition Sneaker</h2>
-          <p>
-            These low-profile sneakers are your perfect causual wear companion.
-            Featuring a durable rubber outer sole, they'll withstand everything
-            the weather can offer.
-          </p>
-          <div class="price-container">
-            <p class="dis-price">$125.00</p>
-            <p class="dis-per">50%</p>
+      </div>
+      <div class="main-right-part">
+        <h5>SNEAKER COMPANY</h5>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect causual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+        <div class="price-container">
+          <p class="dis-price">$125.00</p>
+          <p class="dis-per">50%</p>
+        </div>
+        <p id="oldprice">$250.00</p>
+        <div class="no-items">
+          <div class="add-item">
+            <img id="minus" src="/images/icon-minus.svg" alt="" />
+            <span id="itms">0</span>
+            <img id="plus" src="/images/icon-plus.svg" alt="" />
           </div>
-          <p id="oldprice">$250.00</p>
-          <div class="no-items">
-            <div class="add-item">
-              <img src="images/icon-minus.svg" alt="" id="minus" />
-              <span id="itms">0</span>
-              <img src="images/icon-plus.svg" alt="" id="plus" />
-            </div>
-            <button class="addtocrate"> Add to cart</button>
-          </div>
+          <button class="addtocrate">Add to cart</button>
         </div>
       </div>
-      <div class="img-viwer">
-        <div class="img-holder">
-          <div class="close-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+    </div>
+    <div class="img-viwer">
+      <div class="img-holder">
+        <div class="close-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+            />
+          </svg>
+        </div>
+        <div class="main-img">
+          <img
+            src="/images/image-product-1.jpg"
+            alt="Shoe image"
+            class="main-img"
+            id="viwer-main-img"
+          />
+          <div class="arrow">
+            <svg
+              class="prv-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+            >
               <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
-                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+                d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"
+              />
+            </svg>
+            <svg
+              class="nxt-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 512"
+            >
+              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"
               />
             </svg>
           </div>
-          <div class="main-img">
-            <img
-              src="/images/image-product-1.jpg"
-              alt="Shoe image"
-              class="main-img"
-              id="viwer-main-img"
-            />
-            <div class="arrow">
-              <svg class="prv-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z"/></svg>
-              <svg class="nxt-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
-              </div>
-            </div>
-            <div class="thumbnail-img">
-              <div class="thumbnail" id="viewthumbnail-1"><img src="/images/image-product-1-thumbnail.jpg" alt=""></div>
-              <div class="thumbnail" id="viewthumbnail-2"><img src="/images/image-product-2-thumbnail.jpg" alt=""></div>
-              <div class="thumbnail" id="viewthumbnail-3"><img src="/images/image-product-3-thumbnail.jpg" alt=""></div>
-              <div class="thumbnail" id="viewthumbnail-4"><img src="/images/image-product-4-thumbnail.jpg" alt=""></div>
-            </div>
+        </div>
+        <div class="thumbnail-img">
+          <div class="thumbnail" id="viewthumbnail-1">
+            <img src="/images/image-product-1-thumbnail.jpg" alt="" />
+          </div>
+          <div class="thumbnail" id="viewthumbnail-2">
+            <img src="/images/image-product-2-thumbnail.jpg" alt="" />
+          </div>
+          <div class="thumbnail" id="viewthumbnail-3">
+            <img src="/images/image-product-3-thumbnail.jpg" alt="" />
+          </div>
+          <div class="thumbnail" id="viewthumbnail-4">
+            <img src="/images/image-product-4-thumbnail.jpg" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <main></main>
-    <footer>
-    Collections Men Women About Contact Sneaker Company Fall Limited Edition
-    Sneakers These low-profile sneakers are your perfect casual wear companion.
-    Featuring a durable rubber outer sole, they’ll withstand everything the
-    weather can offer. $125.00 50% $250.00 0 Add to cart
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Bharat Goyal</a>.
-    </div>
-  </footer>
+    <script src="/app.js"></script>
   </body>
 </html>

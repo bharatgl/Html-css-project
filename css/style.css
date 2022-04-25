@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
+button {
+  border: none;
+}
+/* Navigation Styling */
 body {
   max-width: 1440px;
   height: 100vh;
@@ -14,15 +22,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 788) 0px 10px 10px -8px;
+  box-shadow: rgba(0, 0, 0, 0.788) 0px 10px 10px -10px;
 }
-
 .nav-left {
   width: 40rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-logo {
   position: absolute;
   left: 8%;
@@ -66,8 +74,14 @@ body {
 
 /* Main-container */
 
-/*Left-section*/
+/* Left-section */
 .main-container {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+
+.main-left-part {
   width: 50%;
   display: flex;
   margin-left: 3%;
@@ -82,10 +96,9 @@ img {
   border-radius: 10px;
 }
 .main-img-holder {
-  margin-top: 4 rem;
+  margin-top: 4rem;
   left: 10%;
 }
-
 .main-img {
   width: 25rem;
   cursor: pointer;
@@ -101,11 +114,11 @@ img {
   border-radius: 10px;
   transition: transform 0.3s;
 }
-
 .thumbnail img {
   width: 100%;
   height: 100%;
 }
+
 .thumbnail:hover {
   width: 5rem;
   border: 2px solid hsl(26, 100%, 55%);
@@ -115,7 +128,7 @@ img {
   border-radius: 11px;
 }
 
-/*Right Section*/
+/* Right-section */
 .main-right-part {
   width: 50%;
   display: flex;
@@ -129,9 +142,15 @@ img {
   font-family: "Kumbh Sans", sans-serif;
 }
 .main-right-part h2 {
-  margin-top: 1 rem;
+  margin-top: 1rem;
   font-size: 3rem;
   font-weight: 700;
+}
+
+.main-right-part p {
+  margin-top: 1.5rem;
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .price-container {
@@ -145,7 +164,7 @@ img {
   margin-right: 10px;
   font-size: 25px;
   font-weight: 700;
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .price-container .dis-per {
@@ -157,7 +176,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  background-color: hsl(25, 100%, 94%);
   border-radius: 5px;
   font-weight: 500;
 }
@@ -168,6 +188,7 @@ img {
   font-size: 13px;
   color: #ccc;
 }
+
 .no-items {
   display: flex;
   margin-top: 15px;
@@ -186,11 +207,13 @@ img {
   margin-right: 1rem;
 }
 
+.add-item img {
+  transition: transform 0.2s;
+}
 .add-item img:hover {
   cursor: pointer;
   transform: scale(1.3);
 }
-
 .addtocrate {
   width: 11rem;
   height: 2.2rem;
@@ -203,7 +226,7 @@ img {
 
 .addtocrate:hover {
   cursor: pointer;
-  box-shadow: -2px 10px 24px 1px rgpa(0, 0, 0, 0.48);
+  box-shadow: -2px 10px 24px 1px rgba(0, 0, 0, 0.48);
   transform: scale(1.05);
 }
 
@@ -228,16 +251,8 @@ img {
   width: 100%;
   position: relative;
   left: 68%;
-}
-
-.close-icon {
-  margin-bottom: 1.5rem;
-  width: 100%;
-  position: relative;
-  left: 68%;
   top: 2%;
 }
-
 .close-icon svg {
   width: 1.5%;
   fill: rgb(255, 255, 255);
@@ -256,7 +271,6 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .img-holder .main-img {
   width: 30rem;
 }
@@ -282,11 +296,197 @@ img {
   top: 40%;
   left: 28%;
 }
+
 .nxt-icon {
   top: 40%;
   right: 28%;
 }
+
 .thumbnail-img {
   display: flex;
   justify-content: space-evenly;
+  margin-top: 2px;
+  padding: 5px 0px 5px 0px;
+  width: 25rem;
+  height: 6rem;
+}
+.thumbnail-img .thumbnail {
+  width: 5rem;
+}
+
+.thumbnail-img .thumbnail:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  transform: scale(1.1);
+}
+
+/* Mobile Screen */
+
+@media screen and (max-width: 768px) {
+  /* Navigation bar */
+  body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-logo {
+    margin-left: 2rem;
+  }
+  .nav-links {
+    background-color: hsl(25, 100%, 94%);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 0px;
+    width: 100vw;
+    height: 50vh;
+    padding: 5px;
+    border: 2px;
+    top: 95%;
+    left: -100%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    text-align: center;
+  }
+  .nav-links.active {
+    left: 0;
+    transition: all 0.5s ease;
+  }
+  #links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 35px;
+    font-weight: 500;
+    font-family: "Kumbh Sans", sans-serif;
+    transition: transform 0.3s;
+  }
+  #links:hover {
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    opacity: 1;
+    background-color: hsl(26, 100%, 55%);
+    transform: scale(1.1);
+  }
+  .menu-toggle {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translate(5%, 20%);
+  }
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: hsl(26, 100%, 55%);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: hsl(26, 100%, 55%);
+  }
+
+  /* Main Container */
+  .main-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-left-part {
+    height: 50%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-img-holder {
+    height: 100%;
+    margin: 0px;
+  }
+  .main-img {
+    margin: 0px;
+    border-radius: 0px;
+    width: 100vw;
+    height: 100%;
+  }
+  .main-img:hover {
+    cursor: pointer;
+  }
+  .img-thumbnail {
+    display: none;
+  }
+  .main-right-part {
+    height: 50%;
+    width: 100%;
+    padding: 0px;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .main-right-part h5 {
+    margin: 0px;
+    font-weight: 600;
+  }
+  .main-right-part h2 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .main-right-part p {
+    display: inline-table;
+    font-size: 15px;
+    margin-right: 5%;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    color: rgb(10, 10, 10);
+  }
+  #oldprice {
+    position: relative;
+    left: 70%;
+    bottom: 10%;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(160, 151, 151);
+  }
+  .no-items {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .add-item {
+    width: 80%;
+    margin-bottom: 1rem;
+
+    margin-right: 0px;
+  }
+  .addtocrate {
+    width: 80%;
+    align-self: center;
+  }
+  .img-viwer {
+    display: none;
+  }
 }
