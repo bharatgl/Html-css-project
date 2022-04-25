@@ -9,12 +9,9 @@ This is a solution to the [E-commerce product page].
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
+  - [Built with](#built-with) 
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -59,10 +56,20 @@ Mobile view :
 
 ## Author
 
- [Bharat Goyal]
+**Bharat Goyal**
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/bharatgl/Html-css-project)
 - Live Site URL: [Add live site URL here](https://shoebox-ns.netlify.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
